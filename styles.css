@@ -1,0 +1,166 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f7f8fa;
+  --text: #172b4d;
+  --muted: #5e6c84;
+  --border: #dfe1e6;
+  --accent: #0c66e4;
+  --accent-hover: #0055cc;
+  --max-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+.hero {
+  padding: 50px 0 70px;
+}
+
+.hero h1 {
+  max-width: 720px;
+  margin: 0 0 18px;
+  font-size: clamp(38px, 6vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+h2 {
+  margin-top: 42px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-top: 28px;
+}
+
+p, li {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px;
+  margin: 24px 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 11px 18px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+}
+
+.notice {
+  padding: 16px 18px;
+  border-left: 4px solid var(--accent);
+  background: var(--surface);
+  margin: 24px 0;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 30px 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-inner a {
+  margin-right: 16px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+@media (max-width: 650px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  main {
+    padding-top: 40px;
+  }
+}
