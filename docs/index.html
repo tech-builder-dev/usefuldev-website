@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentation — UsefulDev</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="brand" href="/">UsefulDev</a>
+    <div class="nav-links">
+      <a href="/sprint-readiness/">Sprint Readiness</a>
+      <a href="/support/">Support</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Sprint Readiness for Jira — Documentation</h1>
+
+  <h2>Overview</h2>
+
+  <p>
+    Sprint Readiness for Jira helps teams identify common readiness
+    problems in Jira sprints.
+  </p>
+
+  <h2>Running a readiness check</h2>
+
+  <ol>
+    <li>Open the relevant Jira sprint.</li>
+    <li>Open Sprint Readiness for the sprint.</li>
+    <li>Run the readiness check.</li>
+    <li>Review the readiness score and identified problems.</li>
+    <li>Select a problem category to review affected Jira issues.</li>
+  </ol>
+
+  <p>
+    The readiness score is an aid for identifying issues that may need
+    attention. It does not guarantee that a sprint is ready or that a
+    sprint will succeed.
+  </p>
+
+  <h2>Readiness checks</h2>
+
+  <p>The app can evaluate:</p>
+
+  <ul>
+    <li>Missing estimates</li>
+    <li>Missing assignees</li>
+    <li>Missing descriptions</li>
+    <li>Missing acceptance criteria</li>
+    <li>Flagged or blocked issues</li>
+    <li>Unresolved linked dependencies</li>
+    <li>Missing parent relationships when configured</li>
+    <li>Unsuitable workflow statuses when configured</li>
+  </ul>
+
+  <h2>Project configuration</h2>
+
+  <p>
+    Jira project administrators can configure supported readiness
+    settings from the app's project settings page.
+  </p>
+
+  <p>
+    Some checks require project-specific configuration and remain
+    inactive until configured.
+  </p>
+
+  <h2>Data handling</h2>
+
+  <p>
+    Readiness analysis is performed on demand. Jira issue content and
+    scan results are not persisted by UsefulDev in an external database.
+    Project-level app configuration is stored using Atlassian Forge
+    storage.
+  </p>
+
+  <h2>Support</h2>
+
+  <p>
+    For assistance, email
+    <a href="mailto:support@usefuldev.dev">support@usefuldev.dev</a>.
+  </p>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 UsefulDev</p>
+  </div>
+</footer>
+
+</body>
+</html>
